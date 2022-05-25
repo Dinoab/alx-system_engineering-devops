@@ -1,1 +1,1 @@
-Absolute path name of the current working directory
+What’s in there?
