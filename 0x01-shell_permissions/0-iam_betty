@@ -1,2 +1,2 @@
-echo '#!/bin/bash'
-echo 'su betty'
+#!/bin/bash
+su betty
