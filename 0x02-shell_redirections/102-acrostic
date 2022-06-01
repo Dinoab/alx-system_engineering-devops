@@ -1,2 +1,2 @@
 #!/bin/bash
-head -c 1 | cut -c 1 | paste -c -d "
+cut -c 1 | paste -c -d | head -c 1 
