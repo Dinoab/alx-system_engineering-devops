@@ -1,1 +1,19 @@
-mlo
+#!/usr/bin/env bash
+# Displays numbers from 1 to 20 in addition to:
+#   "bad luck for the 4th iteration
+#   "good luck for the 9th iteration
+#   "Best School for the other loop iteration
+
+count=1
+
+while [ $count -le 20 ]
+do
+  echo "$count"
+  case $count in
+    "4") echo "bad luck";;
+    "8") echo "good luck";;
+    else
+    echo "Best School";;
+  esac
+  (( count++ ))
+done
