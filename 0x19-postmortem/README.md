@@ -14,3 +14,8 @@ The issue was fixed when the master server was temporarily disconnected for memo
 - Choose the best loadbalancing algorithm for your programs
 - Always keep an eye on your servers to ensure they are running properly
 - Have extra back-up servers to prevent your program fro completely going offline during an issue
+
+##
+Troubleshooting an HTTP 500 internal server error is like solving a mystery.
+
+https://blog.hubspot.com/hs-fs/hubfs/HTTP-500-Internal-Server-Error-3.jpg?width=595&height=400&name=HTTP-500-Internal-Server-Error-3.jpg
