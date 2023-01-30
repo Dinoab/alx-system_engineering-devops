@@ -39,4 +39,5 @@ Using one of the web stack debugging project issue I have previously done or an 
 - Be brief and straight to the point, between 400 to 600 words
 
 ## Resources
+https://blog.hubspot.com/marketing/http-500-internal-server-error
 [Apiumhub](https://apiumhub.com/tech-blog-barcelona/software-development-project-postmortem/)
