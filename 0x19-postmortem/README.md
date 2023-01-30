@@ -1,5 +1,5 @@
 # website requests failure report
-On previous month, it was reported that the BooktifuL platform was returning 500 Error on all requests made on the platform routes, all the services were down.  most of the users were affected. The root cause was the failure of our master server web-01.
+On previous month, it was reported that the our website platform was returning 500 Error on all requests made on the platform routes, all the services were down.  most of the users were affected. The root cause was the failure of our master server web-01.
 
 ## Timeline
 The error was realized on monday 26th December 2022 at  09:30AM hours (East Africa Time) when our server administrator , Mr kefyalew Zerfu saw the master server lagging in speed. Afterv the situation happened , Our sytem technicians were on  call and  disconnected the master server web-01 for further system analysis and channelled all requests to client server web-02. They solved the  problem by Tuesday 27th December 2022  at 07:15PM  (East Africa Time).
