@@ -34,14 +34,14 @@ defaults
 	errorfile 504 /etc/haproxy/errors/504.http
 
 # start of parameters for ruthmarcuss.tech
-frontend Dinoab.tech-http-frontend
+frontend dinoab.tech-http-frontend
 	bind	 *:80
 	option forwardfor
 	default_backend	 nginx_webservers
 
 
-frontend  Dinoab.tech-https-frontend
-	bind *:443 ssl crt /etc/letsencrypt/live/www.Dinoab.tech.tech/fullchain.pem
+frontend  dinoab.tech-https-frontend
+	bind *:443 ssl crt /etc/letsencrypt/live/www.dinoab.tech.tech/fullchain.pem
         default_backend nginx_webservers
 
 
