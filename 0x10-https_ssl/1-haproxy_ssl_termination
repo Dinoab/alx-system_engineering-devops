@@ -47,6 +47,6 @@ frontend  dinoab.tech-https-frontend
 
 backend nginx_webservers
         balance roundrobin
-        server 64169-web-01 196.188.192.1:80 check
-        server 64169-web-02 41.189.225.201:80 check
+        server 64169-web-01 52.205.193.52:80 check
+        server 64169-web-02 54.197.21.122:80 check
 # end of parameters
