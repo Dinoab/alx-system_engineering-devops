@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
-# installs nginx and configure it to listens on port 80
+# Script that configures a new Ubuntu machine to respect above requirements
 
-sudo apt -y update
-sudo apt -y upgrade
-sudo apt -y install nginx
-sudo chown -R ubuntu:ubuntu /var/www
-echo "Hello World!" > /var/www/html/index.html
-sudo service nginx start
+sudo apt-get update
+sudo apt-get install -y nginx
+
+echo "Hello World!" | sudo tee /var/www/html/index.html
+string_for_replacement="server_name _;\n\trewrite ^\/redirect_me https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4 permanent;"
+sudo sed -i "s/server_name _;/$string_for_replacement/" /etc/nginx/sites-enabled/default
+
+sudo service nginx restart
