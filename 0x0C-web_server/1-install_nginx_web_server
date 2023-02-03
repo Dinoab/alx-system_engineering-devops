@@ -11,8 +11,8 @@ mkdir /etc/nginx/html
 touch /etc/nginx/html/index.html
 echo "Hello World!" > /etc/nginx/html/index.html
 printf %s "server {
-     listen      80 52.205.193.52;
-     listen      [::]:80 52.205.193.52;
+     listen      80 default_server;
+     listen      [::]:80 default_server;
      root        /etc/nginx/html;
      index       index.html index.htm;
 }
