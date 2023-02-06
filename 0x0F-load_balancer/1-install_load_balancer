@@ -14,8 +14,8 @@ HAPROXY_LB_CONFIG=\
 #--$DOMAIN_NAME-params-begin--
 backend $DOMAIN_NAME-backend
 	balance roundrobin
-	server 64169-web-01 52.205.193.52:80 check
-    server 64169-web-02 54.197.21.122:80 check
+	server 64169-web-01 100.25.146.184:80 check
+    server 64169-web-02 100.26.250.130:80 check
 frontend $DOMAIN_NAME-frontend
 	bind *:80
 	mode http
@@ -52,8 +52,8 @@ if [ "$(pgrep -c haproxy)" -le 0 ]; then
 else
 	service haproxy restart
 fi
-    server 64169-web-01 52.205.193.52:80 check
-    server 64169-web-02 54.197.21.122:80 check
+    server 64169-web-01 100.25.146.184:80 check
+    server 64169-web-02 100.26.250.130:80 check
 " >> /etc/haproxy/haproxy.cfg
 
 service haproxy start
